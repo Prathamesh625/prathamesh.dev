@@ -4,7 +4,6 @@ import { IntroPage} from "@pages/index";
 export default function Home() {
   return (
     <div>
-      <Navbar />
       <IntroPage />
     </div>
   );
