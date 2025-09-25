@@ -5,6 +5,7 @@
   --color-brand:#279AF1;
   --color-regular:rgb(221,200,196);
   --animate-marquee: marquee 20s linear infinite;
+  --color-gray-brand:#D3D3D3
 
   @keyframes marquee {
       0% {

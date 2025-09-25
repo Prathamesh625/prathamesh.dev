@@ -1,51 +1,22 @@
 import React from "react";
+import CustomCard from "../component/Card/CustomCard";
 
-const experiences = [
-  {
-    role: "Full-Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "Jan 2023 - Present",
-    description:
-      "Building scalable web applications using React, Node.js, and MongoDB. Focused on performance and user experience.",
-  },
-  {
-    role: "Frontend Developer",
-    company: "Creative Minds",
-    period: "Jun 2021 - Dec 2022",
-    description:
-      "Developed responsive interfaces with React and Tailwind CSS, collaborating with designers and backend developers.",
-  },
-  {
-    role: "Intern - Web Development",
-    company: "InnovateX Labs",
-    period: "Jan 2021 - May 2021",
-    description:
-      "Assisted in developing and maintaining web applications, learning best practices in full-stack development.",
-  },
-];
-
-function ExperiencePage() {
+function Experience() {
   return (
-    <section className="px-6 md:px-20 py-16 min-h-screen">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        My Experience
-      </h1>
-
-      <div className="flex flex-col space-y-8">
-        {experiences.map((exp, index) => (
-          <div
-            key={index}
-            className="bg-[#171717] p-6 rounded-lg shadow hover:shadow-lg transition"
-          >
-            <h2 className="text-xl font-semibold text-white">{exp.role}</h2>
-            <h3 className="text-sm text-gray-400 mt-1">{exp.company}</h3>
-            <p className="text-sm text-gray-500 mt-2">{exp.period}</p>
-            <p className="text-gray-400 mt-3">{exp.description}</p>
-          </div>
-        ))}
+    <div className=" min-h-screen text-2xl font-medium text-center max-md:text-sm px-40 max-md:px-10">
+      <h1 className="text-center my-20">Experience && Education</h1>
+      <div className="flex flex-col my-10 relative">
+        <div className="flex w-10 justify-start h-10 -left-[1.1rem] rounded-sm absolute -top-10 bg-neutral-600"></div>
+        <CustomCard />
+        <CustomCard />
       </div>
-    </section>
+      <div className="flex flex-col my-10 mt-20 relative">
+        <div className="flex w-10 justify-start h-10 -left-[1.1rem] rounded-sm absolute -top-10 bg-neutral-600"></div>
+        <CustomCard />
+        {/* <CustomCard /> */}
+      </div>
+    </div>
   );
 }
 
-export default ExperiencePage;
+export default Experience;

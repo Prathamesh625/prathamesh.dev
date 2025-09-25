@@ -10,7 +10,7 @@ interface ICardProps {
 function Card({ title, description, github, className }: ICardProps) {
   return (
     <div
-      className={`h-52 bg-[#171717] rounded-lg p-5 backdrop-blur-sm border border-neutral-800 shadow hover:shadow-lg hover:scale-105 transition-transform flex flex-col justify-between ${className}`}
+      className={`h-52 bg-[#171717] rounded-lg p-5  border border-neutral-800 shadow hover:shadow-lg hover:scale-105 transition-transform flex flex-col justify-between ${className}`}
     >
       {/* Title */}
       <h2 className="text-xl font-bold text-white">

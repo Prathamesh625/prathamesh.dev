@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "../component/Card/Card";
-import Button from "../component/Button/Button";
-import GithubLogo from "@/assets/svg/github-svgrepo-com (2).svg";
 
 // Example projects
 const projects = [
